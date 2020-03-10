@@ -6,4 +6,5 @@
     - Wiring up an Action Creator
     - Making a Request from an Action Creator
         - `https://jsonplaceholder.typicode.com/`
-        
+    - Creating a Post Reducer
+    
