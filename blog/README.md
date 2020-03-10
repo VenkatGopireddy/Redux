@@ -13,3 +13,6 @@
     - Creating a UserHeader Component
     - Creating Users Reducer
         - Second Method: `Extracting Logic to MapStateToProps`
+    - Resolving the issue in fetching the Users one time
+        - `npm install --save lodash`
+        - Memoizing one time
