@@ -9,4 +9,5 @@
     - Creating a Post Reducer
     - Dispatching Correct Values
     - List Building
+- Creating one more Action to Fetch User
     
