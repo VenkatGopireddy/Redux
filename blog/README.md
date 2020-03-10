@@ -12,3 +12,4 @@
 - Creating one more Action to Fetch User
     - Creating a UserHeader Component
     - Creating Users Reducer
+        - Second Method: `Extracting Logic to MapStateToProps`
