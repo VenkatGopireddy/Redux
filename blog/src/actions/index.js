@@ -8,9 +8,16 @@ export const fetchPostsAndUsers = id => async (dispatch, getState) => {
   // console.log('fetched posts');
   // console.log(getState().posts);
 
-  const userIds = _.uniq(_.map(getState().posts, 'userId'));
-  // console.log(userIds);
-  userIds.forEach(id => dispatch(fetchUser(id)));
+  /* const userIds = _.uniq(_.map(getState().posts, 'userId'));
+  console.log(userIds);
+  userIds.forEach(id => dispatch(fetchUser(id))); */
+
+  // Alternative Option: To implement the same as the above
+  _.chain(getState().posts)
+    .map('userId')
+    .uniq()
+    .forEach(id => dispatch(fetchUser(id)))
+    .value();
 };
 
 export const fetchPosts = () => {
